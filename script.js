@@ -8,14 +8,10 @@ window.onload = (evt) =>{
     document.getElementById("Hat").addEventListener("click", ()=>{changeModal("HatsModal")});
     document.getElementById("Glasses").addEventListener("click", ()=>{changeModal("GlassesModal")});
     document.getElementById("Other").addEventListener("click", ()=>{changeModal("OthersModal")});
-    console.log(Math.floor(Math.random() *  (galleryContent['Character'].length - 1)));
-    console.log(galleryContent['Character'][ Math.floor(Math.random() *  (galleryContent['Character'].length - 1))]["src"]);
     generateRandom("Character");
     generateRandom("Hat");
     generateRandom("Glasses");
     generateRandom("Other");
-    //Math.floor(Math.random() * max)
-
 }
 
 const changeModal = (modal) => {
@@ -24,8 +20,6 @@ const changeModal = (modal) => {
     document.getElementById("GlassesModal").classList.remove("view");
     document.getElementById("OthersModal").classList.remove("view");
     if(modal) document.getElementById(modal).classList.add("view");
-    console.log("hoi");
-    
 }
 
 const populate = (categoryModal) =>{
@@ -37,14 +31,17 @@ const populate = (categoryModal) =>{
         document.getElementById(categoryModal).appendChild(none);
         none.addEventListener("click", ()=>{
             document.getElementById(`main${category}`).src = "";
+            changeModal();
         });
         galleryContent[cat].forEach((image, index) => {
             let currentImage = document.createElement("img");
             currentImage.src = `./assets/${image.src}`;
             currentImage.alt = `image ${index}`;
             currentImage.addEventListener("click", ()=>{
-                if(cat === "Character") document.querySelector("#Name p").innerHTML=`${image.name}`;
-                document.getElementById(`main${category}`).src = `./assets/${image.src}`;
+                if(cat === "Character") changeName(image.name);
+                let bigImage = document.getElementById(`main${category}`)
+                bigImage.src = `./assets/${image.src}`;
+                bigImage.setAttribute("class", image.name)
                 changePreview(category, `./assets/${image.src}`);
                 changeModal();
             });
@@ -74,16 +71,23 @@ const populate = (categoryModal) =>{
 }
 
 const changePreview = (category, link) =>{
-    console.log("hola");
     document.querySelector(`#${category} img`).src = link;
-
 }
 
 const generateRandom = (category) => {
-    let source = `./assets/${galleryContent[category][ Math.floor(Math.random() *  (galleryContent[category].length - 1))]["src"]}`;
-    document.getElementById(`main${category}`).src = source;
+    let number = Math.floor(Math.random() *  (galleryContent[category].length - 1))
+    let source = `./assets/${galleryContent[category][number]["src"]}`;
+    let image = document.getElementById(`main${category}`);
+    let name = galleryContent[category][number]['name'];
+    if(category === "Character") changeName(name);
+    image.src = source;
+    image.setAttribute("class", name);
     changePreview(category, source);
+}
 
+const changeName = (name) =>{
+    document.getElementById("Design").setAttribute("class", name)
+    document.querySelector("#Name p").innerHTML=`${name}`
 }
 
 
