@@ -14,7 +14,7 @@ div{
 main{
     height: 70%;
     width: 85%;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     margin-inline: auto;
 }
 h1{
