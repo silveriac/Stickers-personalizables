@@ -1,4 +1,7 @@
-
+:root{
+    font-family: "Indie Flower", serif;
+    font-weight: 800;
+}
 body{
     background: url("./assets/paper-texture-1.jpg"), rgb(0,0,0);
     background-size: 140%;
