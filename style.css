@@ -6,7 +6,7 @@ body{
     height: 100vh;
 }
 div{
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 main{
     height: 70%;
@@ -45,4 +45,31 @@ p{
 }
 #Options img{
     width: 75px;
+}
+#mainHat{z-index: 4;}
+#mainGlasses{z-index: 3;}
+#mainOther{z-index: 2;}
+#mainCharacter{z-index: 1;}
+
+.modal-viewer{
+    width: 90%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    height: 60%;
+    background-color: white;
+    overflow-y: scroll;
+    margin-inline: auto;
+    display: none;
+    z-index: 5;
+}
+.view{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.modal-viewer>img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
 }

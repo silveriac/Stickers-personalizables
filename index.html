@@ -7,32 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Stickers personalizables</title>
 </head>
 <body>
     <main>
         <div id="Design">
-            <img src="./assets/personajes/skulliver-white.png" alt="skulliver">
+            <img id="mainHat" src="./assets/personajes/skulliver-white.png" alt="skulliver">
+            <img id="mainGlasses" src="./assets/personajes/skulliver-white.png" alt="skulliver">
+            <img id="mainOther" src="./assets/personajes/skulliver-white.png" alt="skulliver">
+            <img id="mainCharacter" src="./assets/personajes/skulliver-white.png" alt="skulliver">
         </div>
         <div id="Name">
             <p>Skulliver</p>
         </div>
     </main>
+    <div id="CharacterModal" class="modal-viewer"></div>
+    <div id="HatsModal" class="modal-viewer"></div>
+    <div id="GlassesModal" class="modal-viewer"></div>
+    <div id="OthersModal" class="modal-viewer"></div>
     <div id="Options">
-        <div class="category">
+        <div id="Character" class="category">
             <img src="./assets/personajes/skulliver-white.png" alt="skulliver">
             <p class="cat-name">Personaje</p>
         </div>
-        <div class="category">
-            <img src="./assets/personajes/skulliver-white.png" alt="skulliver">
+        <div id="Hat" class="category">
+            <img src="./assets/gorros/sombrero-cowboy.png" alt="skulliver">
             <p class="cat-name">Gorro</p>
         </div>
-        <div class="category">
-            <img src="./assets/personajes/skulliver-white.png" alt="skulliver">
+        <div id="Glasses" class="category">
+            <img src="./assets/lentes/potter-negro.png" alt="skulliver">
             <p class="cat-name">Lentes</p>
         </div>
-        <div class="category">
-            <img src="./assets/personajes/skulliver-white.png" alt="skulliver">
+        <div id="Other" class="category">
+            <img src="./assets/otros/mostacho-marron.png" alt="skulliver">
             <p class="cat-name">Otros</p>
         </div>
     </div>
