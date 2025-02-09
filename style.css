@@ -1,0 +1,48 @@
+
+body{
+    background: url("./assets/paper-texture-1.jpg"), rgb(0,0,0);
+    background-size: 140%;
+    background-position: 55%;
+    height: 100vh;
+}
+div{
+    border: 2px solid red;
+}
+main{
+    height: 70%;
+    width: 85%;
+    border: 3px solid blue;
+    margin-inline: auto;
+}
+p{
+    width:fit-content;
+    margin: auto;
+
+
+}
+#Design{
+    height: 85%;
+}
+#Design img{
+    width: 130%;
+    position: absolute;
+    left: -15%;
+    top: -8%;
+}
+#Name{
+    height: 15%;
+    font-family: "Indie Flower", serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+#Name p{
+}
+#Options{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#Options img{
+    width: 75px;
+}
