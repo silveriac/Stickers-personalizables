@@ -8,7 +8,15 @@ window.onload = (evt) =>{
     document.getElementById("Hat").addEventListener("click", ()=>{changeView("HatsModal")});
     document.getElementById("Glasses").addEventListener("click", ()=>{changeView("GlassesModal")});
     document.getElementById("Other").addEventListener("click", ()=>{changeView("OthersModal")});
-    console.log(document.getElementById("CharacterModal"));
+    console.log(Math.floor(Math.random() *  (galleryContent['Character'].length - 1)));
+    console.log(galleryContent['Character'][ Math.floor(Math.random() *  (galleryContent['Character'].length - 1))]["src"]);
+    generateRandom("Character");
+    generateRandom("Hat");
+    generateRandom("Glasses");
+    generateRandom("Other");
+    
+    
+    //Math.floor(Math.random() * max)
 
 }
 
@@ -25,8 +33,6 @@ const populate = (categoryModal) =>{
     let none = document.createElement("img");
     none.src = "./assets/none.png"
     none.alt = "none"
-
-
     const fill = (cat) =>{
         document.getElementById(categoryModal).appendChild(none);
         none.addEventListener("click", ()=>{
@@ -64,11 +70,13 @@ const populate = (categoryModal) =>{
             break;
         default:
             changeView();
-
     };
-
 }
 
+const generateRandom = (category) => {
+    document.getElementById(`main${category}`).src = `./assets/${galleryContent[category][ Math.floor(Math.random() *  (galleryContent[category].length - 1))]["src"]}`;
+
+}
 
 
 const galleryContent  = {
