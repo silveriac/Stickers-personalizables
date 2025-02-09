@@ -164,6 +164,9 @@
 .Don #mainHat:is(.cuernos){
     left: -14%;
 }
+.Don #mainHat:is(.cresta){
+    top: -3.5%;
+}
 .Don #mainHat:is(.cumple){
     left: -18%;
     top: -4%;
