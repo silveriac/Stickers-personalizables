@@ -75,5 +75,17 @@ const galleryContent  = {
         {'src': "otros/monio-rosa.png", 'name':'monio rosa', 'alt': "current misc"},
         {'src': "otros/lips-red.png", 'name':'labios rojos', 'alt': "current misc"},
         {'src': "otros/lips-black.png", 'name':'labios negros', 'alt': "current misc"}
+    ],
+    'Other2': [
+        {'src': "otros/chiva-marron.png", 'name':'chiva marron', 'alt': "current misc"},
+        {'src': "otros/chiva-negra.png", 'name':'chiva negra', 'alt': "current misc"},
+        {'src': "otros/mostacho-marron.png", 'name':'mostacho marron', 'alt': "current misc"},
+        {'src': "otros/mostacho-negro.png", 'name':'mostacho negro', 'alt': "current misc"},
+        {'src': "otros/nariz-payaso.png", 'name':'nariz payaso', 'alt': "current misc"},
+        {'src': "otros/monio-azul.png", 'name':'monio azul', 'alt': "current misc"},
+        {'src': "otros/monio-rojo.png", 'name':'monio rojo', 'alt': "current misc"},
+        {'src': "otros/monio-rosa.png", 'name':'monio rosa', 'alt': "current misc"},
+        {'src': "otros/lips-red.png", 'name':'labios rojos', 'alt': "current misc"},
+        {'src': "otros/lips-black.png", 'name':'labios negros', 'alt': "current misc"}
     ]
 }

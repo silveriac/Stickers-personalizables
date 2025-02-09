@@ -1,0 +1,288 @@
+/*ACCESORIOS COORDENADAS*/
+#mainHat,#mainGlasses, #mainOther, #mainOther2, #mainCharacter{
+    position: absolute;
+    width: 130%;
+    left: -15%;
+    top: -8%;
+}
+.Skulliver #mainHat{
+    left: -14.5%;
+    top: -8.5%;
+}
+.Skulliver #mainGlasses{
+    left: -14.2%;
+    top: -9.2%;
+}
+.Skulliver #mainOther, .Skulliver #mainOther2{
+    left: -14.2%;
+    top: -10%;
+}
+.Terry #mainHat{
+    left: -14.5%;
+    top: -8%;
+}
+.Terry #mainHat:is(.cresta){
+    top: -5%;
+}
+.Terry #mainHat:is(.fez){
+    left: -15%;
+    top: -6.3%;
+}
+.Terry #mainHat:is(.cuernos){
+    left: -13%;
+    top: -9%;
+}
+.Terry #mainHat:is(.cumple){
+    left: -15%;
+    top: -5.5%;
+}
+.Terry #mainGlasses{
+    left: -15.2%;
+    top: -10%;
+}
+.Terry #mainOther, .Terry #mainOther2{
+    left: -16%;
+    top: -9.8%;
+}
+.Terry #mainOther:is(.monio), .Terry #mainOther:is(.mostacho){
+    top: -11%;
+}
+.Terry #mainOther2:is(.monio), .Terry #mainOther2:is(.mostacho){
+    top: -11%;
+}
+.Terry #mainOther:is(.nariz), .Terry #mainOther2:is(.nariz){
+    left: -14%;
+    top:-12%;
+}
+.Allen #mainHat{
+    left: -14.5%;
+    top: -8%;
+}
+.Allen #mainHat:is(.cresta){
+    left: -17.3%;
+    top: -5.7%;
+}
+.Allen #mainHat:is(.pirata){
+    left: -17.3%;
+    top: -7%;
+}
+.Allen #mainHat:is(.unicuerno){
+    left: -17%;
+    top: -8%;
+}
+.Allen #mainHat:is(.cuernos){
+    left: -15.5%;
+}
+.Allen #mainHat:is(.cumple){
+    left: -16.5%;
+    top: -6%;
+}
+.Allen #mainGlasses{
+    left: -17.5%;
+    top: -7%;
+}
+.Allen #mainOther, .Allen #mainOther2{
+    left: -17%;
+    top: -11%;
+}
+.Allen #mainOther:is(.nariz), .Allen #mainOther2:is(.nariz){
+    top: -8.5%;
+}
+.Allen #mainOther:is(.labios), .Allen #mainOther2:is(.labios){
+    top: -10%;
+}
+.Bumi #mainHat{
+    top: -9%;
+    left: -14%;
+}
+.Bumi #mainHat:is(.cresta){
+    left: -16%;
+    top: -5.5%;
+}
+.Bumi #mainHat:is(.cuernos){
+    left: -12.5%;
+}
+.Bumi #mainHat:is(.cumple){
+    left: -16%;
+    top: -6%;
+}
+.Bumi #mainGlasses{
+    top: -9.5%;
+}
+.Bumi #mainOther, .Bumi #mainOther2{
+    top:-10%;
+}
+.Bumi #mainOther:is(.labios), .Bumi #mainOther2:is(.labios){
+    left:-15.5%;
+    top:-9.3%;
+}
+.Bumi #mainOther:is(.chiva), #mainOther:is(.monio){
+    top:-11%;
+    z-index: 0;
+}
+.Bumi #mainOther2:is(.chiva), #mainOther2:is(.monio){
+    top:-11%;
+    z-index: 0;
+}
+.Catherine #mainHat{
+    left: -16%;
+}
+.Catherine #mainHat:is(.baseball){
+    top: -9%;
+}
+.Catherine #mainHat:is(.cresta){
+    left: -16%;
+    top: -3%;
+}
+.Catherine #mainHat:is(.cuernos){
+    left: -14%;
+    top: -7.5%;
+}
+.Catherine #mainHat:is(.cumple){
+    left: -17.5%;
+    top: -4%;
+}
+.Catherine #mainGlasses{
+    top: -9%;
+}
+.Catherine #mainOther2{
+    top: -11%;
+}
+.Catherine #mainOther:is(.chiva), .Catherine #mainOther2:is(.chiva){
+    top: -11.5%;
+}
+.Don #mainHat{
+    left: -16%;
+}
+.Don #mainHat:is(.unicuerno){
+    left: -14%;
+}
+.Don #mainHat:is(.fez){
+    left: -17%;
+    top: -6%;
+}
+.Don #mainHat:is(.cuernos){
+    left: -14%;
+}
+.Don #mainHat:is(.cumple){
+    left: -18%;
+    top: -4%;
+}
+.Don #mainGlasses{
+    left: -15%;
+    top: -9%;
+}
+.Don #mainOther, .Don #mainOther2{
+    left: -15.6%;
+    top: -7.5%;
+}
+.Don #mainOther:is(.monio), .Don #mainOther2:is(.monio){
+    top: -8%;
+}
+.Don #mainOther:is(.nariz), .Don #mainOther2:is(.nariz){
+    top: -9%;
+}
+.Horacio #mainGlasses{
+    left: -12.3%;
+    top: -8.5%;
+}
+.Horacio #mainHat{
+    top: -6.5%;
+}
+.Horacio #mainHat:is(.cresta){
+    left: -13%;
+    top: -2.5%;
+    rotate: -4deg;
+}
+.Horacio #mainHat:is(.cumple){
+    left: -16%;
+    top: -3.5%;
+}
+.Horacio #mainHat:is(.cuernos){
+    left: -12%;
+}
+.Horacio #mainHat:is(.unicuerno){
+    left: -12%;
+}
+.Horacio #mainOther, .Horacio #mainOther2{
+    left: -13%;
+    top: -11%;
+}
+.Horacio #mainOther:is(.labios), .Horacio #mainOther2:is(.labios){
+    top: -13%;
+}
+.Horacio #mainOther:is(.nariz), .Horacio #mainOther2:is(.nariz){
+    left: -11%;
+    top: -8.5%;
+}
+.Robberto #mainHat{
+    left: -12%;
+    top: -10%;
+}
+.Robberto #mainHat:is(.cresta){
+    left: -14%;
+    top: -9.5%;
+}
+.Robberto #mainHat:is(.unicuerno){
+    left: -14.5%;
+    top: -8%;
+}
+.Robberto #mainGlasses{
+    top: -9%;
+}
+.Robberto #mainOther, .Robberto #mainOther2{
+    left: -15%;
+    top: -12%;
+}
+.Robberto #mainOther:is(.labios), .Robberto #mainOther2:is(.labios){
+    top: -13.5%;
+}
+.Robberto #mainOther:is(.nariz), .Robberto #mainOther2:is(.nariz){
+    left: -14.5%;
+    top: -10%;
+}
+.Robberto #mainOther:is(.monio), .Robberto #mainOther2:is(.monio){
+    left: -13.5%;
+    top: -9%;
+}
+.Robberto #mainOther:is(.chiva), .Robberto #mainOther2:is(.chiva){
+    left: -15.2%;
+    top: -8.2%;
+}
+.Jackson #mainHat{
+    left: -16.2%;
+}
+.Jackson #mainHat:is(.baseball){
+    left: -16.2%;
+    top: -9.5%;
+}
+.Jackson #mainHat:is(.cresta){
+    left: -15.2%;
+    top: -4%;
+}
+.Jackson #mainHat:is(.unicuerno){
+    left: -14%;
+    top: -7.5%;
+}
+.Jackson #mainHat:is(.cuernos){
+    left: -12.5%;
+}
+.Jackson #mainGlasses{
+    left: -13.5%;
+    top: -10%;
+}
+.Jackson #mainOther, .Jackson #mainOther2{
+    left: -13.5%;
+    top: -14%;
+}
+.Jackson #mainOther:is(.nariz), .Jackson #mainOther2:is(.nariz){
+    left: -12.5%;
+    top: -11.5%;
+}
+.Jackson #mainOther:is(.chiva), .Jackson #mainOther2:is(.chiva){
+    left: -14.5%;
+    top: -13%;
+}
+.Jackson #mainOther:is(.monio), .Jackson #mainOther2:is(.monio){
+    left: -15.5%;
+}

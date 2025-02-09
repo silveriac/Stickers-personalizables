@@ -4,21 +4,39 @@ window.onload = (evt) =>{
     populate("HatsModal");
     populate("GlassesModal");
     populate("OthersModal");
+    populate("Others2Modal");
     document.getElementById("Character").addEventListener("click", ()=>{changeModal("CharacterModal")});
     document.getElementById("Hat").addEventListener("click", ()=>{changeModal("HatsModal")});
     document.getElementById("Glasses").addEventListener("click", ()=>{changeModal("GlassesModal")});
     document.getElementById("Other").addEventListener("click", ()=>{changeModal("OthersModal")});
-    generateRandom("Character");
-    generateRandom("Hat");
-    generateRandom("Glasses");
-    generateRandom("Other");
+    document.getElementById("Other2").addEventListener("click", ()=>{changeModal("Others2Modal")});
+    document.getElementById("random").addEventListener("click", ()=>{generateRandom()});
+    generateRandom();
 }
-
+const generateRandom = () =>{
+    randomize("Character");
+    if(Math.floor(Math.random() * 10) > 2) randomize("Hat");
+    if(Math.floor(Math.random() * 10) > 3) randomize("Glasses");
+    if(Math.floor(Math.random() * 10) > 5) randomize("Other");
+    if(Math.floor(Math.random() * 10) > 5) {randomize("Other2"); console.log("prueba1");
+    };
+}
+const randomize = (category) => {
+    let number = Math.floor(Math.random() *  (galleryContent[category].length - 1))
+    let source = `./assets/${galleryContent[category][number]["src"]}`;
+    let image = document.getElementById(`main${category}`);
+    let name = galleryContent[category][number]['name'];
+    if(category === "Character") changeName(name);
+    image.src = source;
+    image.setAttribute("class", name);
+    changePreview(category, source);
+}
 const changeModal = (modal) => {
     document.getElementById("CharacterModal").classList.remove("view");
     document.getElementById("HatsModal").classList.remove("view");
     document.getElementById("GlassesModal").classList.remove("view");
     document.getElementById("OthersModal").classList.remove("view");
+    document.getElementById("Others2Modal").classList.remove("view");
     if(modal) document.getElementById(modal).classList.add("view");
 }
 
@@ -65,6 +83,10 @@ const populate = (categoryModal) =>{
             category = "Other"
             fill('Other');
             break;
+        case "Others2Modal":
+            category = "Other2"
+            fill('Other2');
+            break;
         default:
             changeModal();
     };
@@ -72,17 +94,6 @@ const populate = (categoryModal) =>{
 
 const changePreview = (category, link) =>{
     document.querySelector(`#${category} img`).src = link;
-}
-
-const generateRandom = (category) => {
-    let number = Math.floor(Math.random() *  (galleryContent[category].length - 1))
-    let source = `./assets/${galleryContent[category][number]["src"]}`;
-    let image = document.getElementById(`main${category}`);
-    let name = galleryContent[category][number]['name'];
-    if(category === "Character") changeName(name);
-    image.src = source;
-    image.setAttribute("class", name);
-    changePreview(category, source);
 }
 
 const changeName = (name) =>{
