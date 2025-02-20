@@ -5,6 +5,9 @@
     left: -15%;
     top: -8%;
 }
+
+/*SKULLIVER*/
+
 .Skulliver #mainHat{
     left: -14.5%;
     top: -8.5%;
@@ -17,6 +20,9 @@
     left: -14.2%;
     top: -10%;
 }
+
+/*TERRY*/
+
 .Terry #mainHat{
     left: -14.5%;
     top: -8%;
@@ -54,6 +60,9 @@
     left: -14%;
     top:-12%;
 }
+
+/*ALLEN*/
+
 .Allen #mainHat{
     left: -14.5%;
     top: -8%;
@@ -91,6 +100,9 @@
 .Allen #mainOther:is(.labios), .Allen #mainOther2:is(.labios){
     top: -10%;
 }
+
+/*BUMI*/
+
 .Bumi #mainHat{
     top: -9%;
     left: -14%;
@@ -124,6 +136,9 @@
     top:-11%;
     z-index: 0;
 }
+
+/*CATHERINE*/
+
 .Catherine #mainHat{
     left: -16%;
 }
@@ -145,12 +160,18 @@
 .Catherine #mainGlasses{
     top: -9%;
 }
+.Catherine #mainOther{
+    top: -11%;
+}
 .Catherine #mainOther2{
     top: -11%;
 }
 .Catherine #mainOther:is(.chiva), .Catherine #mainOther2:is(.chiva){
     top: -11.5%;
 }
+
+/*DON*/
+
 .Don #mainHat{
     left: -16%;
 }
@@ -185,6 +206,9 @@
 .Don #mainOther:is(.nariz), .Don #mainOther2:is(.nariz){
     top: -9%;
 }
+
+/*HORACIO*/
+
 .Horacio #mainGlasses{
     left: -12.3%;
     top: -8.5%;
@@ -218,6 +242,9 @@
     left: -11%;
     top: -8.5%;
 }
+
+/*ROBBERTO*/
+
 .Robberto #mainHat{
     left: -12%;
     top: -10%;
@@ -252,6 +279,9 @@
     left: -15.2%;
     top: -8.2%;
 }
+
+/*JACKSON*/
+
 .Jackson #mainHat{
     left: -16.2%;
 }

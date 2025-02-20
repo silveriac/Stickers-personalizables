@@ -13,16 +13,48 @@ window.onload = (evt) =>{
     document.getElementById("random").addEventListener("click", ()=>{generateRandom()});
     generateRandom();
 }
+
+function getRandomNumbers() {
+    const numbers = new Set();
+
+    while (numbers.size < 4) {
+        numbers.add(Math.floor(Math.random() * 10) + 1);
+    }
+
+    return [...numbers]; // Convert Set to Array
+}
 const generateRandom = () =>{
     randomize("Character");
-    if(Math.floor(Math.random() * 10) > 2) randomize("Hat");
-    if(Math.floor(Math.random() * 10) > 3) randomize("Glasses");
-    if(Math.floor(Math.random() * 10) > 5) randomize("Other");
-    if(Math.floor(Math.random() * 10) > 5) {randomize("Other2"); console.log("prueba1");
+
+    const numbers = getRandomNumbers();
+    
+
+    if(numbers[0] > 2){
+        randomize("Hat");
+    }else{
+        document.getElementById("mainHat").src = "";
     };
-}
+    if(numbers[1] > 3){
+        randomize("Glasses");
+    }else{
+        document.getElementById("mainGlasses").src = "";
+    };
+    if(numbers[2] > 5){
+        randomize("Other");
+    }
+    else{
+        document.getElementById("mainOther").src = "";
+    };
+    if(numbers[3] > 7){
+        randomize("Other2");
+    }else{
+        document.getElementById("mainOther2").src = "";
+    };
+};
 const randomize = (category) => {
     let number = Math.floor(Math.random() *  (galleryContent[category].length - 1))
+    console.log(number+ "  "+ category);
+    
     let source = `./assets/${galleryContent[category][number]["src"]}`;
     let image = document.getElementById(`main${category}`);
     let name = galleryContent[category][number]['name'];
@@ -43,8 +75,8 @@ const changeModal = (modal) => {
 const populate = (categoryModal) =>{
     let category = "";
     let none = document.createElement("img");
-    none.src = "./assets/none.png"
-    none.alt = "none"
+    none.src = "./assets/none.png";
+    none.alt = "none";
     const fill = (cat) =>{
         document.getElementById(categoryModal).appendChild(none);
         none.addEventListener("click", ()=>{
@@ -60,7 +92,7 @@ const populate = (categoryModal) =>{
                 if(cat === "Character") changeName(image.name);
                 let bigImage = document.getElementById(`main${category}`)
                 bigImage.src = `./assets/${image.src}`;
-                bigImage.setAttribute("class", image.name)
+                bigImage.setAttribute("class", image.name);
                 changePreview(category, `./assets/${image.src}`);
                 changeModal();
             });
