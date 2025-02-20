@@ -52,6 +52,7 @@ const populate = (categoryModal) =>{
             changeModal();
         });
         galleryContent[cat].forEach((image, index) => {
+            let div = document.createElement("div");
             let currentImage = document.createElement("img");
             currentImage.src = `./assets/${image.src}`;
             currentImage.alt = `image ${index}`;
@@ -63,7 +64,8 @@ const populate = (categoryModal) =>{
                 changePreview(category, `./assets/${image.src}`);
                 changeModal();
             });
-            document.getElementById(categoryModal).appendChild(currentImage);
+            div.appendChild(currentImage);
+            document.getElementById(categoryModal).appendChild(div);
         })
     }
     switch(categoryModal){

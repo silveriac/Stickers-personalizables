@@ -1,12 +1,20 @@
 :root{
     font-family: "Indie Flower", serif;
     font-weight: 800;
+    color: black;
+}
+@media (prefers-color-scheme: dark) {
+    :root{
+        color: black;
+    }
 }
 body{
     background: url("./assets/paper-texture-1.jpg"), rgb(0,0,0);
     background-size: 140%;
     background-position: 55%;
     height: 100vh;
+    max-width: 800px;
+    margin-inline:auto;
 }
 div{
     /* border: 2px solid red; */
@@ -14,6 +22,7 @@ div{
 main{
     height: 70%;
     width: 85%;
+
     /* border: 3px solid blue; */
     margin-inline: auto;
 }
@@ -27,10 +36,15 @@ p{
 }
 #Design{
     height: 85%;
+    width: 90%;
+    overflow: hidden;
     /* position: relative; */
 }
 #Design img[src='']{
     display: none;
+}
+#Design{
+    max-width: 750px;
 }
 #Name{
     height: 15%;
@@ -76,12 +90,22 @@ p{
     display: none;
     z-index: 10;
 }
+.modal-viewer > div{
+    height: 100px;
+}
 .view{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.modal-viewer>img{
+.modal-viewer > div{
+    width: 100px;
+    overflow: hidden;
+}
+.modal-viewer img{
     width: 100px;
     height: 100px;
-    margin: auto;
 }
+/* #GlassesModal img{
+    width: 150px;
+    height: 150px;
+} */
